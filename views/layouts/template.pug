@@ -1,0 +1,86 @@
+
+
+
+doctype html
+html
+  head
+    title Steelers Anthym
+    meta(charset="UTF-8")
+    link(rel="stylesheet" href="/static/css/styles.css")
+    script(src="/static/3081/index.js")
+  
+  body
+    a(href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapers.com%2Fpittsburgh-steelers-pictures&psig=AOvVaw1TYNydxJYrRd2Wg0QLMmLG&ust=1731540071781000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDR_sn314kDFQAAAAAdAAAAABAE") Steeler Country
+
+    div
+      ul
+        each fanName in fanNames
+          li= fanName
+
+      form(method="POST", action="/fanNames")
+        label(for="name") No. 1 Steeler Fan
+        input(type="text", name="content", id="name", placeholder="Enter first name")
+        input(type="submit", value="Add Fan")
+
+      table
+        tr
+          td
+            label STATS
+          td
+            input(type="text", name="stats", id="stats")
+          
+        tr
+          td
+            label GAMES
+          td
+            input(type="text", name="games", id="games")
+
+
+            
+//- <!DOCTYPE html>
+//- <html>
+//-   <head>
+//-     <title>"Steelers Anthym"</title>
+//-     <meta charset="UTF-8" />
+//-     <link rel="stylesheet" href="/style.css" />
+//-     link(rel="stylesheet", href="/static/css/styles.css")
+//-    script(src+"/static/3081/index.js")
+//-   </head>
+
+//-   <body>
+      
+//-         a(href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapers.com%2Fpittsburgh-steelers-pictures&psig=AOvVaw1TYNydxJYrRd2Wg0QLMmLG&ust=1731540071781000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDR_sn314kDFQAAAAAdAAAAABAE") "Steeler Country."
+//-     div 
+//-          ul 
+//-             li {{ fanNames }}
+//-             li {{ fanNames }}
+//-             li {{ fanNames }}
+
+//-                 form(method="POST", action="/fanNames") 
+//-                 label(for="id", text="") No. 1 Steeler Fan.
+//-                 //- imput(name="", password, text="", id="", placeholder="first name")
+//-                 imput(name="name",  text="", id="name", placeholder="first name")
+//-                 imput(type="submit", value="fanNames")
+
+//-                 table 
+//-                     tr  
+//-                         td
+//-                         label STATS 
+
+//-                         td 
+//-                         inpute(name="name", id="name")
+
+
+//-                     tr
+//-                          td 
+//-                          label GAMES 
+//-                          td
+//-                          input(name="name", id="name")
+
+//-     </div>
+//-   </body>
+//- </html>
+
+
+
+   
